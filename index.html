@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2E7D32" />
+  <title>GreenPulse · Encuesta Pulso Diario</title>
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="app-shell">
+
+    <section id="welcomeScreen" class="screen screen-active">
+      <div class="glass-card welcome-card">
+        <img class="logo" src="https://www.fallcreeknursery.com/assets/images/logo.png" alt="Fall Creek">
+        <div class="sprout-mark">🌱</div>
+        <h1>Encuesta Pulso Diario</h1>
+        <p>Tu opinión es anónima y nos ayuda a seguir creciendo.</p>
+        <p class="microcopy">Te tomará menos de 30 segundos.</p>
+        <button id="startButton" class="primary-button">Comenzar</button>
+      </div>
+    </section>
+
+    <section id="surveyScreen" class="screen" hidden>
+      <div class="glass-card survey-card">
+        <header class="survey-header">
+          <img class="logo small" src="https://www.fallcreeknursery.com/assets/images/logo.png" alt="Fall Creek">
+          <p class="anonymous">🔒 Encuesta anónima</p>
+        </header>
+
+        <div class="progress-row">
+          <span id="questionCounter">Pregunta 1 de 5</span>
+          <span id="progressPercent">20%</span>
+        </div>
+
+        <div class="progress-track" aria-hidden="true">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+
+        <div id="questionStage" class="question-stage">
+          <div class="question-badge">💬</div>
+          <h2 id="questionText">Cargando pregunta...</h2>
+
+          <div id="answersContainer" class="answers-grid" aria-label="Opciones de respuesta"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="commentScreen" class="screen" hidden>
+      <div class="glass-card comment-card">
+        <div class="screen-icon">💬</div>
+        <h2>¿Quieres compartir algo más?</h2>
+        <p>El comentario es opcional. También puedes finalizar sin escribir nada.</p>
+
+        <textarea id="commentBox" placeholder="Escribe aquí tu comentario o sugerencia..."></textarea>
+
+        <div class="button-row">
+          <button id="skipCommentButton" class="secondary-button">Omitir</button>
+          <button id="finishButton" class="primary-button">Finalizar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="thankYouScreen" class="screen" hidden>
+      <div class="glass-card thanks-card">
+        <div class="plant-animation">
+          <div class="plant-pot"></div>
+          <div class="plant-stem"></div>
+          <div class="plant-leaf left"></div>
+          <div class="plant-leaf right"></div>
+        </div>
+        <h2>¡Gracias!</h2>
+        <p>Tu voz ayuda a que Fall Creek siga creciendo.</p>
+        <p class="microcopy">Nos vemos mañana.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="loaderOverlay" class="loader-overlay" hidden>
+    <div class="loader-card">
+      <div class="loader-line"></div>
+      <p>Enviando respuesta...</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden>
+    <span id="toastIcon">⚠️</span>
+    <span id="toastMessage">Mensaje</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
