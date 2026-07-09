@@ -149,7 +149,7 @@ button{
 }
 
 .logo.small{
-  width:190px;
+  width:130px;
   margin:0;
 }
 
@@ -264,7 +264,7 @@ p{
   border-radius:999px;
   background:rgba(255,255,255,.22);
   overflow:hidden;
-  margin-bottom:clamp(28px,5vw,48px);
+  margin-bottom:clamp(28px,5vw,20px);
 }
 
 .progress-fill{
