@@ -56,3 +56,20 @@ IMPORTANTE:
 - Esta versión usa `Content-Type: application/json`.
 - Tu flujo debe poder leer `triggerBody().questionNumber`, `triggerBody().question`, `triggerBody().answer`, `triggerBody().timestamp`, `triggerBody().comment`.
 - Si Power Automate devuelve error CORS, agrega al final del flujo una acción "Response" con Status Code 200.
+
+
+## GreenPulse Tab A9 Kiosk Edition
+
+Se agregó CSS especial para Samsung Galaxy Tab A9 en orientación horizontal.
+
+Mejoras:
+- Evita scroll vertical.
+- Reduce logo, márgenes y encabezado.
+- Mantiene las 5 respuestas visibles en una sola fila.
+- Oculta descripciones de respuesta en modo horizontal para ahorrar altura.
+- Optimiza pantalla de bienvenida, comentarios y agradecimiento.
+
+Recomendación:
+- Usar la tablet en horizontal.
+- Usar Chrome / PWA instalada / Fully Kiosk.
+- Mantener zoom del navegador al 100%.

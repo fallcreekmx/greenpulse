@@ -3,7 +3,7 @@
    ========================================================= */
 
 // Pega aquí tu URL real de Power Automate.
-const flowURL = "https://default83a30358170946fa8bfae9d0a8ac5c.53.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/4090012a1be24d6797cf2fa53c66e2a3/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=i5Jt5owZMpxgv2X_4D2IvYGdxZIJax9CZMn5DW9lgNI";
+const flowURL = "PEGA_AQUI_TU_URL_DE_POWER_AUTOMATE";
 
 /*
   Estrategia:
